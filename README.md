@@ -106,20 +106,21 @@ export default {
 Properties
 ----------
 
-| Name                     | Type                                | Required | Default value                  | Info                                                                                                   |
-| ------------------------ | ----------------------------------- | -------- | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| **items**                | Array                               | Yes      |                                | List items                                                                                             |
-| **component-item**       | Vue Component or Function or String | No       | Item                           | Item list template                                                                                     |
-| **min-len**              | Number                              | No       | 3                              | Min length to trigger the *updateItems* event                                                          |
-| **wait**                 | String                              | No       | 500                            | Miliseconds dela to trigger the *updateItems* event                                                    |
-| **get-label**            | Function                            | No       | function(item) { return item } | Anonymous function to extract label of the item                                                        |
-| **value**                | Mixed                               | No       |                                | Initial value (use v-model)                                                                            |
-| **auto-select-one-item** | Boolean                             | No       | true                           | Auto select item if result one item in items                                                           |
-| **input-attrs**          | Object                              | No       | {}                             | Attributes for input                                                                                   |
-| **keep-open**            | Boolean                             | No       | false                          | If true, suggestions list stays open even when input is not active |
-| **placeholder**          | String                              | No       |                                | **Deprecated**, will be removed in the next version. Use **input-attrs**                               |
-| **input-class**          | String                              | No       |                                | Custom class of input search. **Deprecated**, will be removed in the next version. Use **input-attrs** |
-| **disabled**             | Boolean                             | No       | false                          | Disable input. **Deprecated**, will be removed in the next version. Use **input-attrs**                |
+| Name                      | Type                                | Required | Default value                  | Info                                                                                                   |
+| ------------------------- | ----------------------------------- | -------- | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **items**                 | Array                               | Yes      |                                | List items                                                                                             |
+| **component-item**        | Vue Component or Function or String | No       | Item                           | Item list template                                                                                     |
+| **min-len**               | Number                              | No       | 3                              | Min length to trigger the *updateItems* event                                                          |
+| **wait**                  | String                              | No       | 500                            | Miliseconds dela to trigger the *updateItems* event                                                    |
+| **get-label**             | Function                            | No       | function(item) { return item } | Anonymous function to extract label of the item                                                        |
+| **value**                 | Mixed                               | No       |                                | Initial value (use v-model)                                                                            |
+| **auto-select-one-item**  | Boolean                             | No       | true                           | Auto select item if result one item in items                                                           |
+| **input-attrs**           | Object                              | No       | {}                             | Attributes for input                                                                                   |
+| **keep-open**             | Boolean                             | No       | false                          | If true, suggestions list stays open even when input is not active                                     |
+| **placeholder**           | String                              | No       |                                | **Deprecated**, will be removed in the next version. Use **input-attrs**                               |
+| **input-class**           | String                              | No       |                                | Custom class of input search. **Deprecated**, will be removed in the next version. Use **input-attrs** |
+| **disabled**              | Boolean                             | No       | false                          | Disable input. **Deprecated**, will be removed in the next version. Use **input-attrs**                |
+| **clear-unless-selected** | Boolean                             | No       | true                           | If an item was selected once and you start typing again, clears the input. Legacy behaviour            |
 
 Events
 ------

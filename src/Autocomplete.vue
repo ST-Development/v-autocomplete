@@ -44,7 +44,8 @@ export default {
         return {};
       }
     },
-    keepOpen: { type: Boolean, default: false }
+    keepOpen: { type: Boolean, default: false },
+    clearUnlessSelected: { type: Boolean, default: true }
   },
   data() {
     return {
@@ -154,7 +155,7 @@ export default {
       }
     },
     value(newValue) {
-      if (!this.isSelectedValue(newValue)) {
+      if (this.clearUnlessSelected && !this.isSelectedValue(newValue)) {
         this.onSelectItem(newValue);
         this.searchText = this.getLabel(newValue);
       }
